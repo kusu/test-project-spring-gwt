@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.f1soft.testproject.server.utils.AuthenticationUtil;
+
 
 @Controller
 public class LoginController {
@@ -25,5 +27,13 @@ public class LoginController {
 		modelMap.put("errormessage", errormessage == null ? "" : errormessage);
 		loginView.addObject("msg", "Login is required!!");
 		return loginView;
+	}
+	
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String getHome() {
+		if(AuthenticationUtil.getCurrentUser()!=null){
+			return "redirect:/main";
+		}
+		return "redirect:/login";
 	}
 }

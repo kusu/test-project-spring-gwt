@@ -16,6 +16,4 @@
 
 	<bean class="com.f1soft.testproject.server.web.controller.MainController" />
 
-
-
 </beans>

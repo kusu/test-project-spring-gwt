@@ -13,7 +13,7 @@
 	<logger name="org.springframework" level="DEBUG" />
 	<logger name="org.springframework.data" level="DEBUG" />
 	<logger name="org.springframework.security" level="DEBUG" />
-	<logger name="com.f1soft.ctbs" level="ALL" />
+	<logger name="com.f1soft.testproject" level="ALL" />
 	<logger name="org.springframework.ws.client.MessageTracing">
 		<level value="ALL" />
 	</logger>
