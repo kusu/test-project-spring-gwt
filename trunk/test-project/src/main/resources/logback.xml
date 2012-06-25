@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.hibernate.type" level="ALL" />
+	<logger name="org.hibernate" level="DEBUG" />
+	<logger name="org.springframework" level="DEBUG" />
+	<logger name="org.springframework.data" level="DEBUG" />
+	<logger name="org.springframework.security" level="DEBUG" />
+	<logger name="com.f1soft.ctbs" level="ALL" />
+	<logger name="org.springframework.ws.client.MessageTracing">
+		<level value="ALL" />
+	</logger>
+	<logger name="org.springframework.ws.server.MessageTracing">
+		<level value="ALL" />
+	</logger>
+
+
+	<root level="INFO">
+		<appender-ref ref="FILE" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>
