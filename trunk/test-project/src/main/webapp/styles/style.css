@@ -1,0 +1,383 @@
+ @charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #8f9798;
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+}
+
+h3{
+	font-size: 18px;
+	padding: 0 0 10px 0;
+	
+}
+
+body {
+	background: #e2e2e2 url(../images/body_bg.gif) repeat-x;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* a{ */
+/* 	float:left; */
+/* } */
+
+/* 	color: #527513; */
+/* 	text-decoration: underline; */
+/* 	font-weight: bold; */
+/* } */
+
+/* a:hover { */
+/* 	text-decoration: none; */
+/* 	color: #000; */
+/* } */
+
+.header_top {
+	width: 100%;
+	float: left;
+}
+
+.header_con {
+/* 	width: 431px; */
+	width: 900px;
+	margin: 0 auto;
+}
+
+.header_con .header_inside {
+/* 	width: 431px; */
+	width: 900px;
+	float: left;
+	text-align: center;
+	padding: 26px 0 26px 0;
+}
+
+.header_con .header_inside p.logo{
+	text-align: center;
+}
+
+.header_con .header_inside p.nav{
+	float:right;
+	width:100%;
+	text-align:right;
+	color:#dff1dc;
+}
+
+.header_con .header_inside p.nav a{
+	color:#dff1dc;
+	text-decoration:none;
+}
+
+.header_con .header_inside p.nav a:hover{
+		text-decoration:underline;
+}
+
+.header_con .header_nav {
+	widows: auto;
+	padding: 0 50px 0 0;
+	font-size: 12px;
+}
+
+.main_content {
+	width: 100%;
+	float: right;
+}
+
+.main_con {
+	width: 431px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.menu {
+	width: 431px;
+	float: left;
+}
+
+div.loginPanel {
+	width: 371px;
+	float: left;
+	padding: 0 30px;
+	background: url(../images/login_bg.gif) no-repeat;
+	height: 260px;
+	margin: 0 0 30px 0;
+}
+
+div.loginForm {
+	float: left;
+	padding: 0 0 0;
+	width: 100%;
+}
+
+div.login_const{
+	width:100%;
+	float:left;
+	height:30px;
+	padding:20px 0 0 0;
+	color:#f9062e;
+}
+
+.main_con div.login_msg{
+	width:100%;
+	float:left;
+	padding:20px 0 0 0;
+	color:#5E8815;
+}
+
+div.msgSent {
+	color: #003366;
+	float: left;
+	padding: 0 0 10px;
+	width: 100%;
+}
+
+div.loginForm form {
+	float: left;
+	width: 100%;
+}
+
+div.loginForm p {
+	float: left;
+	padding: 5px 0;
+	width: 100%;
+	font-size: 12px;
+}
+
+div.loginForm p label {
+	width: 100%;
+	padding: 3px 0 5px 0;
+	font-size: 12px;
+	color: #527513;
+	font-weight: bold;
+}
+
+div.loginForm p label,div.loginForm p input,div.loginForm p textarea {
+	float: left;
+}
+
+div.loginForm p input,div.loginForm p textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 1px 2px;
+	width: 99%;
+	border: none;
+}
+
+div.loginForm p input {
+	height: 34px;
+	background: url(../images/input_bg.png) no-repeat;
+}
+
+div.loginForm p input {
+	width: 99%;
+}
+
+div.loginForm p.bttns input {
+	margin-right: 5px;
+	padding: 2px 5px;
+	width: auto;
+	background: none;
+}
+
+div.loginForm p.bttns span.lt {
+	width: 100px;
+	float: left;
+}
+
+div.loginForm p.bttns span.rt {
+	width: 220px;
+	float: left;
+	font-size: 12px;
+	padding: 0 0 0 20px;
+}
+
+div.loginForm p.bttns span.rt span {
+	float: left;
+	padding: 8px 0 0 0;
+}
+
+.myButton,.myButton2,.myButton3 {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b5d67d
+		), color-stop(1, #99bd68) );
+	background: -moz-linear-gradient(center top, #b5d67d 5%, #99bd68 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5d67d',
+		endColorstr='#99bd68' );
+	background-color: #000;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;
+	color: #fff;
+	font-family: arial;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 8px 10px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #5ca400;
+	display: block;
+	text-align: center;
+	border: 1px solid #5e8815;
+}
+
+.myButton:hover,.myButton2:hover,.myButton3:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #99bd68
+		), color-stop(1, #b5d67d) );
+	background: -moz-linear-gradient(center top, #99bd68 5%, #b5d67d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99bd68',
+		endColorstr='#b5d67d' );
+	background-color: #000;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.footer {
+	width: 100%;
+	background: url(../images/footer_bg.gif) repeat-x;
+	float: left;
+}
+
+.footer_con {
+	font-size: 13px;
+	width: 431px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.reg_con {
+	width: 460px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+
+div.content_form_holder{
+	width:100%;
+	margin:0 auto;
+}
+
+div.contentForm {
+	width: 400px;
+	padding:0;
+	float:left;
+	background: #fff;
+	padding:30px;
+	border:1px solid #cecece;
+	margin:0 0 30px 0;
+}
+
+div.contentForm form {
+	float: left;
+	width: 100%;
+}
+
+div.contentForm p {
+	float: left;
+	padding: 5px 0;
+	width: 100%;
+	font-size: 12px;
+}
+
+div.contentForm p span{
+	float:right;
+	padding:3px 0;
+	width:230px;
+	color:#f80a0a;
+}
+
+div.contentForm p label {
+	width: 170px;
+	padding: 3px 0 5px 0;
+	font-size: 12px;
+	color: #527513;
+	font-weight: bold;
+}
+
+div.contentForm p label,div.contentForm p input,div.contentForm p textarea
+	{
+	float: left;
+	padding:8px 0 0 0;
+}
+
+div.contentForm p input,div.contentForm p textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	padding: 1px 2px;
+	width: 40%;
+	border: none;
+}
+
+div.contentForm p input {
+	height: 27px;
+	border:1px solid #cecece;
+	/* 	background: url(../images/input_bg.png) no-repeat; */
+}
+
+div.contentForm p input {
+	width: 220px;
+}
+
+div.contentForm p.bttns input {
+	margin-right: 5px;
+	padding: 2px 5px;
+	width: auto;
+	background: none;
+}
+
+div.contentForm p.bttns span.lt {
+	width: 100px;
+	float: left;
+}
+
+div.contentForm p.bttns span.rt {
+	width: 220px;
+	float: left;
+	font-size: 12px;
+	padding: 0 0 0 20px;
+}
+
+div.contentForm p.bttns span.rt span {
+	float: left;
+	padding: 8px 0 0 0;
+}
+
+
+div#gwt_holder{
+	width:990px;
+	margin:0 auto;	
+}
+
+div#gwt{
+	width:990px;
+	float:left;
+}
+
+.loader {
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	
+}
+
+.in-loader {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+
+
