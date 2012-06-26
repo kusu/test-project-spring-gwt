@@ -27,6 +27,24 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	
+	<!-- RequestFactory servlet configuration -->
+	<servlet>
+		<servlet-name>requestFactoryServlet</servlet-name>
+		<servlet-class>com.google.web.bindery.requestfactory.server.RequestFactoryServlet</servlet-class>
+		<init-param>
+			<param-name>symbolMapsDirectory</param-name>
+			<!-- You'll need to compile with -extras and move the symbolMaps directory 
+				to this location if you want stack trace deobfuscation to work -->
+			<param-value>WEB-INF/classes/symbolMaps/</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>requestFactoryServlet</servlet-name>
+		<url-pattern>/gwtRequest</url-pattern>
+	</servlet-mapping>
+
+
 	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
@@ -66,5 +84,5 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+
 </web-app>

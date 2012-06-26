@@ -31,7 +31,6 @@ body {
 	border-bottom: 1px solid #ccc;
 }
 
-
 #wrapper .loginContent {
 	width: 400px;
 	margin: 0 auto;
@@ -82,10 +81,10 @@ body {
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#9b9b9b),
 		to(#494949) );
 	background: -moz-linear-gradient(top, #9b9b9b, #494949);
-	-ms-filter: progid : DXImageTransform.Microsoft.gradient ( startColorStr
-		= #9b9b9b, endColorStr = #494949 );
-	filter: progid : DXImageTransform.Microsoft.gradient ( startColorStr =
-		#9b9b9b, endColorStr = #494949 );
+	-ms-filter: progid:  DXImageTransform.Microsoft.gradient(  startColorStr=
+		 #9b9b9b, endColorStr=  #494949 );
+	filter: progid:  DXImageTransform.Microsoft.gradient(  startColorStr= 
+		#9b9b9b, endColorStr=  #494949 );
 	cursor: pointer;
 	display: inline-block; /* IE is so silly */
 	float: right;
@@ -94,18 +93,18 @@ body {
 .button:hover {
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#494949),
 		to(#9b9b9b) );
-	background: -moz-linear-gradient(top, #494949, #9b9b9b) filter :  
-		progid : DXImageTransform.Microsoft.gradient ( startColorstr = #9b9b9b,
-		endColorstr = #494949 );
+	background: -moz-linear-gradient(top, #494949, #9b9b9b) filter:   
+		progid:  DXImageTransform.Microsoft.gradient(  startColorstr=  #9b9b9b,
+		endColorstr=  #494949 );
 }
 
-#wrapper .loginContent .button{
+#wrapper .loginContent .button {
 	width: auto;
 	padding: 5px 10px;
 	font-size: 15px;
 }
 
-.loginError{
+.loginError {
 	color: red;
 	font-style: italic;
 	margin: 20px 0;

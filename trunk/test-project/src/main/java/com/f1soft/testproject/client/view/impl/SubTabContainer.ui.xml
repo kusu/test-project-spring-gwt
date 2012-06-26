@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"  
+	xmlns:t="urn:import:com.f1soft.testproject.client.ui.tab">
+	<ui:style>
+	
+	</ui:style>
+
+	<g:HTMLPanel>
+		<t:SubTabPanel ui:field="tabPanel"></t:SubTabPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

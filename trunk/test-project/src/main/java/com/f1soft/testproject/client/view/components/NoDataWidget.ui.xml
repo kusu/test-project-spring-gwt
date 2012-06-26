@@ -1,0 +1,24 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	.label {
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		width: 150px;
+		margin: 0px auto;
+		
+	}
+	
+	.container {
+		padding: 30px 0px;
+	
+	}
+		
+	</ui:style>
+	<g:HTMLPanel styleName="{style.container}">
+		<g:InlineHTML ui:field="label">There are no data available</g:InlineHTML>
+	</g:HTMLPanel>
+</ui:UiBinder> 

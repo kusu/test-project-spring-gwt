@@ -1,7 +1,7 @@
 package com.f1soft.testproject.client.view;
 
-import com.gwtplatform.mvp.client.View;
+import com.f1soft.testproject.client.presenter.AbstractMainPagePresenter;
 
-public interface MainPageView extends View {
+public interface MainPageView extends AbstractMainPagePresenter.MainView {
 
 }

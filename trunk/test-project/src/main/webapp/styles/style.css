@@ -1,11 +1,11 @@
- @charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 * {
 	margin: 0;
 	padding: 0;
 }
 
-h2, h3 {
+h2,h3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	color: #8f9798;
@@ -14,10 +14,9 @@ h2, h3 {
 	font-style: italic;
 }
 
-h3{
+h3 {
 	font-size: 18px;
 	padding: 0 0 10px 0;
-	
 }
 
 body {
@@ -29,54 +28,49 @@ body {
 /* a{ */
 /* 	float:left; */
 /* } */
-
 /* 	color: #527513; */
 /* 	text-decoration: underline; */
 /* 	font-weight: bold; */
 /* } */
-
 /* a:hover { */
 /* 	text-decoration: none; */
 /* 	color: #000; */
 /* } */
-
 .header_top {
 	width: 100%;
 	float: left;
 }
 
-.header_con {
-/* 	width: 431px; */
+.header_con { /* 	width: 431px; */
 	width: 900px;
 	margin: 0 auto;
 }
 
-.header_con .header_inside {
-/* 	width: 431px; */
+.header_con .header_inside { /* 	width: 431px; */
 	width: 900px;
 	float: left;
 	text-align: center;
 	padding: 26px 0 26px 0;
 }
 
-.header_con .header_inside p.logo{
+.header_con .header_inside p.logo {
 	text-align: center;
 }
 
-.header_con .header_inside p.nav{
-	float:right;
-	width:100%;
-	text-align:right;
-	color:#dff1dc;
+.header_con .header_inside p.nav {
+	float: right;
+	width: 100%;
+	text-align: right;
+	color: #dff1dc;
 }
 
-.header_con .header_inside p.nav a{
-	color:#dff1dc;
-	text-decoration:none;
+.header_con .header_inside p.nav a {
+	color: #dff1dc;
+	text-decoration: none;
 }
 
-.header_con .header_inside p.nav a:hover{
-		text-decoration:underline;
+.header_con .header_inside p.nav a:hover {
+	text-decoration: underline;
 }
 
 .header_con .header_nav {
@@ -116,19 +110,19 @@ div.loginForm {
 	width: 100%;
 }
 
-div.login_const{
-	width:100%;
-	float:left;
-	height:30px;
-	padding:20px 0 0 0;
-	color:#f9062e;
+div.login_const {
+	width: 100%;
+	float: left;
+	height: 30px;
+	padding: 20px 0 0 0;
+	color: #f9062e;
 }
 
-.main_con div.login_msg{
-	width:100%;
-	float:left;
-	padding:20px 0 0 0;
-	color:#5E8815;
+.main_con div.login_msg {
+	width: 100%;
+	float: left;
+	padding: 20px 0 0 0;
+	color: #5E8815;
 }
 
 div.msgSent {
@@ -261,20 +255,19 @@ div.loginForm p.bttns span.rt span {
 	padding: 70px 0;
 }
 
-
-div.content_form_holder{
-	width:100%;
-	margin:0 auto;
+div.content_form_holder {
+	width: 100%;
+	margin: 0 auto;
 }
 
 div.contentForm {
 	width: 400px;
-	padding:0;
-	float:left;
+	padding: 0;
+	float: left;
 	background: #fff;
-	padding:30px;
-	border:1px solid #cecece;
-	margin:0 0 30px 0;
+	padding: 30px;
+	border: 1px solid #cecece;
+	margin: 0 0 30px 0;
 }
 
 div.contentForm form {
@@ -289,11 +282,11 @@ div.contentForm p {
 	font-size: 12px;
 }
 
-div.contentForm p span{
-	float:right;
-	padding:3px 0;
-	width:230px;
-	color:#f80a0a;
+div.contentForm p span {
+	float: right;
+	padding: 3px 0;
+	width: 230px;
+	color: #f80a0a;
 }
 
 div.contentForm p label {
@@ -307,7 +300,7 @@ div.contentForm p label {
 div.contentForm p label,div.contentForm p input,div.contentForm p textarea
 	{
 	float: left;
-	padding:8px 0 0 0;
+	padding: 8px 0 0 0;
 }
 
 div.contentForm p input,div.contentForm p textarea {
@@ -320,7 +313,7 @@ div.contentForm p input,div.contentForm p textarea {
 
 div.contentForm p input {
 	height: 27px;
-	border:1px solid #cecece;
+	border: 1px solid #cecece;
 	/* 	background: url(../images/input_bg.png) no-repeat; */
 }
 
@@ -352,15 +345,14 @@ div.contentForm p.bttns span.rt span {
 	padding: 8px 0 0 0;
 }
 
-
-div#gwt_holder{
-	width:990px;
-	margin:0 auto;	
+div#gwt_holder {
+	width: 990px;
+	margin: 0 auto;
 }
 
-div#gwt{
-	width:990px;
-	float:left;
+div#gwt {
+	width: 990px;
+	float: left;
 }
 
 .loader {
@@ -370,7 +362,6 @@ div#gwt{
 	margin: 0px auto;
 	margin-top: 100px;
 	margin-bottom: 100px;
-	
 }
 
 .in-loader {
@@ -378,6 +369,3 @@ div#gwt{
 	width: 0px;
 	height: 0px;
 }
-
-
-

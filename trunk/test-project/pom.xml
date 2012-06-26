@@ -17,11 +17,14 @@
 		<gwt.version>2.4.0</gwt.version>
 		<spring.security.version>3.1.0.RELEASE</spring.security.version>
 		<webappDirectory>src/main/webapp</webappDirectory>
+		<json.version>20090211</json.version>
+		<gwtp.version>0.6</gwtp.version>
+		<guice.version>3.0</guice.version>
 	</properties>
 
 	<dependencies>
-	
-	<!-- gwt dependencies start -->
+
+		<!-- gwt dependencies start -->
 		<dependency>
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-user</artifactId>
@@ -41,17 +44,41 @@
 		<dependency>
 			<groupId>com.gwtplatform</groupId>
 			<artifactId>gwtp-mvp-client</artifactId>
-			<version>0.6</version>
+			<version>${gwtp.version}</version>
 			<type>jar</type>
 			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.gwtplatform</groupId>
+			<artifactId>gwtp-dispatch-client</artifactId>
+			<version>${gwtp.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.gwtplatform</groupId>
+			<artifactId>gwtp-dispatch-server-guice</artifactId>
+			<version>${gwtp.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
-			<version>3.0</version>
+			<version>${guice.version}</version>
 			<type>jar</type>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-servlet</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-assistedinject</artifactId>
+			<version>${guice.version}</version>
 		</dependency>
 
 		<dependency>
@@ -70,9 +97,17 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!-- Required for RequestFactory -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>${json.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
 		<!-- gwt dependencies end -->
-		
-	<!-- JPA Persistence Dependencies -->
+
+		<!-- JPA Persistence Dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -97,6 +132,22 @@
 			<groupId>org.hibernate.javax.persistence</groupId>
 			<artifactId>hibernate-jpa-2.0-api</artifactId>
 			<version>1.0.0.Final</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Bean Validation Dependencies -->
+
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.0.0.GA</version>
 			<scope>compile</scope>
 		</dependency>
 
@@ -177,8 +228,8 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-		
-			<!-- DB Dependencies -->
+
+		<!-- DB Dependencies -->
 
 		<dependency>
 			<groupId>commons-dbcp</groupId>
@@ -194,7 +245,7 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<!-- logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -241,7 +292,7 @@
 			<version>5.1.17</version>
 			<type>jar</type>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="gwtServiceExporter" class="com.f1soft.testproject.server.remoting.GwtServiceExporter"/>
-	
+	<bean id="gwtServiceExporter"
+		class="com.f1soft.testproject.server.remoting.GwtServiceExporter" />
+
 	<bean class="com.f1soft.testproject.server.remoting.GwtBeanPostProcessor">
-		<constructor-arg ref="gwtServiceExporter"/>
+		<constructor-arg ref="gwtServiceExporter" />
 	</bean>
 
 </beans>

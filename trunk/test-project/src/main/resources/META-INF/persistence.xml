@@ -6,7 +6,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<class>com.f1soft.testproject.server.entities.User</class>
-
+		<class>com.f1soft.testproject.server.entities.Address</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" />
@@ -20,7 +20,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<class>com.f1soft.testproject.server.entities.User</class>
-		
+		<class>com.f1soft.testproject.server.entities.Address</class>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" />
 			<property name="driverClassName" value="org.hsqldb.jdbcDriver" />

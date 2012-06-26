@@ -49,7 +49,7 @@
 		class="com.f1soft.testproject.server.auth.UserDetailsServiceImpl">
 		<beans:constructor-arg ref="userRepository" />
 	</beans:bean>
-	
+
 	<!-- <beans:bean id="passwordEncoder" -->
 	<!-- class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/> -->
 
