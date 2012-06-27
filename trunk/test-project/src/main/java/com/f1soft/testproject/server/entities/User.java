@@ -1,8 +1,6 @@
 package com.f1soft.testproject.server.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
 
 @Entity
 public class User extends AbstractEntity<Long> {
@@ -22,16 +20,16 @@ public class User extends AbstractEntity<Long> {
 
 	private boolean disabled;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	private Address address;
-
-	public Address getAddress() {
-		return this.address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
+	// @ManyToOne(fetch = FetchType.EAGER)
+	// private Address address;
+	//
+	// public Address getAddress() {
+	// return this.address;
+	// }
+	//
+	// public void setAddress(Address address) {
+	// this.address = address;
+	// }
 
 	public String getUserName() {
 		return userName;

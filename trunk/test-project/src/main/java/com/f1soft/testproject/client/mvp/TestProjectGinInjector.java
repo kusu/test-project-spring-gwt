@@ -4,6 +4,7 @@ import com.f1soft.testproject.client.i18n.TestProjectConstants;
 import com.f1soft.testproject.client.presenter.HomePagePresenter;
 import com.f1soft.testproject.client.presenter.MainPagePresenter;
 import com.f1soft.testproject.client.presenter.ProfilePresenter;
+import com.f1soft.testproject.shared.service.TestRequestFactory;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.inject.client.AsyncProvider;
 import com.google.gwt.inject.client.GinModules;
@@ -19,6 +20,8 @@ public interface TestProjectGinInjector extends Ginjector {
 	EventBus getEventBus();
 
 	TestProjectConstants getTestProjectConstants();
+
+	TestRequestFactory getRequestFactory();
 
 	Provider<MainPagePresenter> getMainPagePresenter();
 

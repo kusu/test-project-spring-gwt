@@ -87,7 +87,7 @@ body {
 		#9b9b9b, endColorStr=  #494949 );
 	cursor: pointer;
 	display: inline-block; /* IE is so silly */
-	float: right;
+	float: left;
 }
 
 .button:hover {

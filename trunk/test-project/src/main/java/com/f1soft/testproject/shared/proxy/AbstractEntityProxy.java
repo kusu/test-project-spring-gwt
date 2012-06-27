@@ -15,5 +15,4 @@ public interface AbstractEntityProxy extends EntityProxy {
 
 	public int getVersion();
 
-	public long getId();
 }

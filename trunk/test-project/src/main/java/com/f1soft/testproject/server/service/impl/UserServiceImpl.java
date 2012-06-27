@@ -1,10 +1,10 @@
-package com.f1soft.testproject.server.service;
+package com.f1soft.testproject.server.service.impl;
 
 import java.util.List;
 
 import com.f1soft.testproject.server.entities.User;
 import com.f1soft.testproject.server.repositories.UserRepository;
-import com.f1soft.testproject.shared.service.UserService;
+import com.f1soft.testproject.server.service.UserService;
 
 public class UserServiceImpl implements UserService {
 

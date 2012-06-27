@@ -1,17 +1,19 @@
 package com.f1soft.testproject.server.locator;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
+
+import com.google.web.bindery.requestfactory.server.RequestFactoryServlet;
 import com.google.web.bindery.requestfactory.shared.ServiceLocator;
 
 public class TestServiceLocator implements ServiceLocator {
 
 	@Override
 	public Object getInstance(Class<?> clazz) {
-		try {
-			return clazz.newInstance();
-		} catch (InstantiationException e) {
-			throw new RuntimeException(e);
-		} catch (IllegalAccessException e) {
-			throw new RuntimeException(e);
-		}
+		HttpServletRequest request = RequestFactoryServlet.getThreadLocalRequest();
+		ApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(request.getSession().getServletContext());
+		return context.getBean(clazz);
 	}
 }

@@ -1,9 +1,10 @@
 package com.f1soft.testproject.shared.proxy;
 
 import com.f1soft.testproject.server.entities.User;
+import com.f1soft.testproject.server.locator.UserLocator;
 import com.google.web.bindery.requestfactory.shared.ProxyFor;
 
-@ProxyFor(value = User.class)
+@ProxyFor(value = User.class, locator = UserLocator.class)
 public interface UserProxy extends AbstractEntityProxy {
 
 	public String getUserName();
@@ -25,4 +26,5 @@ public interface UserProxy extends AbstractEntityProxy {
 	public boolean isDisabled();
 
 	public void setDisabled(boolean disabled);
+
 }

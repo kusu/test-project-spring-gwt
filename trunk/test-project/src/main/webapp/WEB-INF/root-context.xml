@@ -6,11 +6,10 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 
 	<import resource="classpath:/WEB-INF/jpa-context.xml" />
+	<import resource="classpath:/WEB-INF/service-context.xml" />
 	<!-- <import resource="classpath:/WEB-INF/api-context.xml" /> -->
 	<import resource="classpath:/WEB-INF/repositories-context.xml" />
-	<!-- <import resource="classpath:/WEB-INF/esewaws-context.xml" /> -->
-	<!-- <import resource="classpath:/WEB-INF/scheduler-context.xml" /> -->
-	<!-- <import resource="classpath:/WEB-INF/gwt-context.xml" /> -->
+	<import resource="classpath:/WEB-INF/gwt-context.xml" />
 	<!-- <import resource="classpath:/WEB-INF/rpc-context.xml" /> -->
 
 

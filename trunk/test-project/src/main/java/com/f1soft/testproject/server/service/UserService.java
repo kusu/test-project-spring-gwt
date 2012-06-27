@@ -1,4 +1,4 @@
-package com.f1soft.testproject.shared.service;
+package com.f1soft.testproject.server.service;
 
 import java.util.List;
 

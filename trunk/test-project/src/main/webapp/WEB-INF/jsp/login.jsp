@@ -22,6 +22,7 @@
 	<form:form name="f" action="${action}" method="POST">
 		<div id="wrapper">
 			<div class="headerInfo">
+				<label>Login...</label>
 				<div class="clear"></div>
 			</div>
 
@@ -43,10 +44,8 @@
 						<input type='password' name='j_password'>
 					</p>
 				</div>
-				<div class="username">
-					<p>&nbsp;</p>
-				</div>
-				<div class="password">
+				
+				<div >
 					<input class="button" name="submit" type="submit" value="Login">
 				</div>
 				<div class="clear"></div>
