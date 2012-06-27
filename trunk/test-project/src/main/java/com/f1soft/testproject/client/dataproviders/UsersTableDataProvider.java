@@ -28,6 +28,7 @@ public class UsersTableDataProvider extends AbstractDataProvider<UserProxy> {
 
 			@Override
 			public void onSuccess(List<UserProxy> result) {
+				Window.alert(result.get(0).getAddress() + "");
 				updateRowCount(result.size(), true);
 				updateRowData(0, result);
 			}

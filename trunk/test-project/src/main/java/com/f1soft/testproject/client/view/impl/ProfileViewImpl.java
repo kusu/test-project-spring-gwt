@@ -40,7 +40,7 @@ public class ProfileViewImpl extends ViewImpl implements ProfileView {
 
 			@Override
 			public String getValue(UserProxy object) {
-				return String.valueOf(object.getVersion());
+				return String.valueOf(object.getId());
 			}
 		};
 		Column<UserProxy, String> registerDate = new Column<UserProxy, String>(new TextCell()) {

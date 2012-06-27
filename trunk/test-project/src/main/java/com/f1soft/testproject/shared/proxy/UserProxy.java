@@ -27,4 +27,9 @@ public interface UserProxy extends AbstractEntityProxy {
 
 	public void setDisabled(boolean disabled);
 
+	public AddressProxy getAddress();
+
+	public void setAddress(AddressProxy address);
+
+	public Long getId();
 }
