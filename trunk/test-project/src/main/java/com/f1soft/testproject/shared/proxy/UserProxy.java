@@ -1,10 +1,10 @@
 package com.f1soft.testproject.shared.proxy;
 
 import com.f1soft.testproject.server.entities.User;
-import com.f1soft.testproject.server.locator.UserLocator;
+import com.f1soft.testproject.server.locator.EntityLocator;
 import com.google.web.bindery.requestfactory.shared.ProxyFor;
 
-@ProxyFor(value = User.class, locator = UserLocator.class)
+@ProxyFor(value = User.class, locator = EntityLocator.class)
 public interface UserProxy extends AbstractEntityProxy {
 
 	public String getUserName();

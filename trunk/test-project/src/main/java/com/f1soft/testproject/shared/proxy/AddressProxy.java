@@ -1,11 +1,11 @@
 package com.f1soft.testproject.shared.proxy;
 
 import com.f1soft.testproject.server.entities.Address;
-import com.f1soft.testproject.server.locator.AddressLocator;
+import com.f1soft.testproject.server.locator.EntityLocator;
 import com.google.web.bindery.requestfactory.shared.ProxyFor;
 import com.google.web.bindery.requestfactory.shared.ValueProxy;
 
-@ProxyFor(value = Address.class, locator = AddressLocator.class)
+@ProxyFor(value = Address.class, locator = EntityLocator.class)
 public interface AddressProxy extends ValueProxy {
 
 	public String getFirstLine();
