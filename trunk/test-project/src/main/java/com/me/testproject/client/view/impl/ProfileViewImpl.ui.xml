@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:t="urn:import:com.me.testproject.client.ui.tab"
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+	<g:HTMLPanel>
+		<g:HTML>Hello, Good Morning</g:HTML>
+		<g:HTML>Here is the list of all users...</g:HTML>
+		<c:CellTable ui:field="usersTable"></c:CellTable>		
+	</g:HTMLPanel>
+
+</ui:UiBinder> 

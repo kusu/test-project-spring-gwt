@@ -12,7 +12,7 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="com.google.gdt.eclipse.maven.mavenClasspathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.gwt.dev.DevMode"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-war D:\project\wsp\test-project\src\main\webapp -startupUrl http://localhost:8080/test-project/main -remoteUI &quot;${gwt_remote_ui_server_port}:${unique_id}&quot; -logLevel INFO -noserver -codeServerPort 9997 com.f1soft.testproject.testproject"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-war D:\project\wsp\test-project\src\main\webapp -startupUrl http://localhost:8080/test-project/main -remoteUI &quot;${gwt_remote_ui_server_port}:${unique_id}&quot; -logLevel INFO -noserver -codeServerPort 9997 com.f1soft.testproject.testproject com.me.testproject.testproject"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="test-project"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:MaxPermSize=256m -Xmx512m"/>
 </launchConfiguration>

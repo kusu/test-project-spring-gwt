@@ -12,8 +12,8 @@
 
 	<mvc:annotation-driven />
 
-	<bean class="com.f1soft.testproject.server.web.controller.LoginController" />
+	<bean class="com.me.testproject.server.web.controller.LoginController" />
 
-	<bean class="com.f1soft.testproject.server.web.controller.MainController" />
+	<bean class="com.me.testproject.server.web.controller.MainController" />
 
 </beans>

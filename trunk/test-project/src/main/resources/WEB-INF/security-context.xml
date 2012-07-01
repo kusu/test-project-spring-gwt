@@ -46,7 +46,7 @@
 	</authentication-manager>
 
 	<beans:bean id="userDetailService"
-		class="com.f1soft.testproject.server.auth.UserDetailsServiceImpl">
+		class="com.me.testproject.server.auth.UserDetailsServiceImpl">
 		<beans:constructor-arg ref="userRepository" />
 	</beans:bean>
 

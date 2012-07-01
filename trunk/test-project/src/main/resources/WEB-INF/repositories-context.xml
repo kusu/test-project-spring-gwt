@@ -6,5 +6,5 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
         http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
-	<jpa:repositories base-package="com.f1soft.testproject.server.repositories" />
+	<jpa:repositories base-package="com.me.testproject.server.repositories" />
 </beans>

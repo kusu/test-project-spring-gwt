@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="gwtServiceExporter"
-		class="com.f1soft.testproject.server.remoting.GwtServiceExporter" />
+		class="com.me.testproject.server.remoting.GwtServiceExporter" />
 
-	<bean class="com.f1soft.testproject.server.remoting.GwtBeanPostProcessor">
+	<bean class="com.me.testproject.server.remoting.GwtBeanPostProcessor">
 		<constructor-arg ref="gwtServiceExporter" />
 	</bean>
 
