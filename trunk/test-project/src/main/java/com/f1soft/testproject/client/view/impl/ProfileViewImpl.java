@@ -65,6 +65,14 @@ public class ProfileViewImpl extends ViewImpl implements ProfileView {
 			}
 		};
 
+		Column<UserProxy, String> address = new Column<UserProxy, String>(new TextCell()) {
+
+			@Override
+			public String getValue(UserProxy object) {
+				return object.getAddress().getCity() + ", " + object.getAddress().getCountry();
+			}
+		};
+
 		Column<UserProxy, String> authority = new Column<UserProxy, String>(new TextCell()) {
 
 			@Override
@@ -78,6 +86,7 @@ public class ProfileViewImpl extends ViewImpl implements ProfileView {
 		usersTable.addColumn(userName, "Username");
 		usersTable.addColumn(password, "Password");
 		usersTable.addColumn(authority, "Authority");
+		usersTable.addColumn(address, "Address");
 	}
 
 	@Override

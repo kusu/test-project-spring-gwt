@@ -24,11 +24,10 @@ public class UsersTableDataProvider extends AbstractDataProvider<UserProxy> {
 	@Override
 	protected void onRangeChanged(HasData<UserProxy> display) {
 		UserRequestContext userRequest = userRequestProvider.get();
-		userRequest.getAllUsers().fire(new Receiver<List<UserProxy>>() {
+		userRequest.getAllUsers().with("address").fire(new Receiver<List<UserProxy>>() {
 
 			@Override
 			public void onSuccess(List<UserProxy> result) {
-				// Window.alert(result.get(0).getAddress() + "");
 				updateRowCount(result.size(), true);
 				updateRowData(0, result);
 			}
