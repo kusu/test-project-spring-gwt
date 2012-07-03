@@ -8,4 +8,6 @@ public interface UserService {
 
 	public List<User> getAllUsers();
 
+	void updateUser(User u);
+
 }

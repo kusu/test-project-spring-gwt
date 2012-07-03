@@ -56,4 +56,14 @@ public class Address extends AbstractEntity<Long> {
 		this.country = country;
 	}
 
+	@Override
+	public Long getId() {
+		return super.getId();
+	}
+
+	@Override
+	public void setId(Long id) {
+		super.setId(id);
+	}
+
 }

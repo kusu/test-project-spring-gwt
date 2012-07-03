@@ -1,6 +1,5 @@
 package com.me.testproject.client.ui.tab;
 
-
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
@@ -13,12 +12,9 @@ public class MainTabPanel extends BaseTabPanel {
 	interface MainTabPanelUiBinder extends UiBinder<Widget, MainTabPanel> {
 	}
 
-
-
 	public MainTabPanel() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-
 
 	@Override
 	protected BaseTab createNewTab(TabData tabData) {

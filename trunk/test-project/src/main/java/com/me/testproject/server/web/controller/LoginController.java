@@ -9,7 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.me.testproject.server.utils.AuthenticationUtil;
 
-
 @Controller
 public class LoginController {
 
@@ -28,10 +27,10 @@ public class LoginController {
 		loginView.addObject("msg", "Login is required!!");
 		return loginView;
 	}
-	
-	@RequestMapping(value="/",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getHome() {
-		if(AuthenticationUtil.getCurrentUser()!=null){
+		if (AuthenticationUtil.getCurrentUser() != null) {
 			return "redirect:/main";
 		}
 		return "redirect:/login";

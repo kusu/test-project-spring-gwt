@@ -6,6 +6,7 @@
 	
 	<bean id="userService" class="com.me.testproject.server.service.impl.UserServiceImpl">
 		<constructor-arg ref="userRepository"></constructor-arg>
+		<constructor-arg ref="addressRepository"></constructor-arg>
 	</bean>
 
 </beans>

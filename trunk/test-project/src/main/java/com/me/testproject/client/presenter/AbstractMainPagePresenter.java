@@ -14,14 +14,14 @@ import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 public class AbstractMainPagePresenter<V extends AbstractMainPagePresenter.MainView, Proxy_ extends Proxy<?>> extends TabContainerPresenter<V, Proxy_> {
 
 	public AbstractMainPagePresenter(EventBus eventBus, V view, Proxy_ proxy) {
-		super(eventBus, view, proxy, TYPE_SetMainContent, TYPE_RequestTabs);		
+		super(eventBus, view, proxy, TYPE_SetMainContent, TYPE_RequestTabs);
 	}
 
 	public interface MainView extends TabView {
 		void showLoading(boolean shouldLock);
 
 	}
-	
+
 	@RequestTabs
 	public static final Type<RequestTabsHandler> TYPE_RequestTabs = new Type<RequestTabsHandler>();
 
@@ -31,11 +31,11 @@ public class AbstractMainPagePresenter<V extends AbstractMainPagePresenter.MainV
 	@Override
 	protected void revealInParent() {
 		RevealRootContentEvent.fire(this, this);
-		
+
 	}
-	
+
 	@Override
 	protected void onReveal() {
-		super.onReveal();		
+		super.onReveal();
 	}
 }

@@ -8,8 +8,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.me.testproject.server.entities.User;
 
-
-
 public class UserDetailsWrapper implements UserDetails, Serializable, Comparable<UserDetailsWrapper> {
 	/**
 	 * 
@@ -87,4 +85,3 @@ public class UserDetailsWrapper implements UserDetails, Serializable, Comparable
 	}
 
 }
-

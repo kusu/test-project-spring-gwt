@@ -6,7 +6,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.RootPresenter;
 
-public class TestRootPresenter extends RootPresenter{
+public class TestRootPresenter extends RootPresenter {
 
 	@Inject
 	public TestRootPresenter(EventBus eventBus, TestRootView view) {

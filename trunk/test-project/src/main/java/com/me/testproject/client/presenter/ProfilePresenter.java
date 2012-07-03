@@ -2,6 +2,7 @@ package com.me.testproject.client.presenter;
 
 import com.google.gwt.event.shared.EventBus;
 import com.google.inject.Inject;
+import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.TabData;
 import com.gwtplatform.mvp.client.TabDataBasic;
@@ -16,12 +17,18 @@ import com.me.testproject.client.mvp.NameTokens;
 import com.me.testproject.client.mvp.TestProjectGinInjector;
 import com.me.testproject.client.presenter.ProfilePresenter.ProfileProxy;
 import com.me.testproject.client.view.ProfileView;
+import com.me.testproject.shared.proxy.UserProxy;
+import com.me.testproject.shared.request.UserRequestContext;
 
-public class ProfilePresenter extends Presenter<ProfileView, ProfileProxy> {
+public class ProfilePresenter extends Presenter<ProfileView, ProfileProxy> implements ProfileView.ProfileViewUiHandler {
+
+	@Inject
+	private UserRequestContext userRequestContext;
 
 	@Inject
 	public ProfilePresenter(EventBus eventBus, ProfileView view, ProfileProxy proxy, UsersTableDataProvider dataProvider) {
 		super(eventBus, view, proxy);
+		getView().setUiHandlers(this);
 		dataProvider.addDataDisplay(view.getDisplay());
 	}
 
@@ -49,5 +56,25 @@ public class ProfilePresenter extends Presenter<ProfileView, ProfileProxy> {
 	@TitleFunction
 	public String getTranslatedTitle(TestProjectGinInjector gInjector) {
 		return gInjector.getTestProjectConstants().profile();
+	}
+
+	private void refreshTable() {
+		getView().getDisplay().setVisibleRangeAndClearData(getView().getDisplay().getVisibleRange(), true);
+	}
+
+	@Override
+	public void updateProfile(UserProxy user) {
+		userRequestContext.updateUser(user).fire(new Receiver<Void>() {
+
+			@Override
+			public void onSuccess(Void response) {
+				refreshTable();
+			}
+		});
+	}
+
+	@Override
+	public UserRequestContext getUserRequestContext() {
+		return this.userRequestContext;
 	}
 }

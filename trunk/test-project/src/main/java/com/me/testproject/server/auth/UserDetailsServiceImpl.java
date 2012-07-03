@@ -5,7 +5,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.me.testproject.server.auth.UserDetailsWrapper;
 import com.me.testproject.server.entities.User;
 import com.me.testproject.server.repositories.UserRepository;
 

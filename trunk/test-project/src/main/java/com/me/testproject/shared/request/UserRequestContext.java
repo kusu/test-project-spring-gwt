@@ -14,4 +14,5 @@ public interface UserRequestContext extends RequestContext {
 
 	public Request<List<UserProxy>> getAllUsers();
 
+	public Request<Void> updateUser(UserProxy proxy);
 }

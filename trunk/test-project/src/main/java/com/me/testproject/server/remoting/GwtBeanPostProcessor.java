@@ -1,6 +1,5 @@
 package com.me.testproject.server.remoting;
 
-
 import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.config.BeanPostProcessor;
