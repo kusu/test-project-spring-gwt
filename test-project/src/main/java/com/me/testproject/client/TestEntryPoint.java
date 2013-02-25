@@ -1,3 +1,5 @@
+  // Test comment
+
 package com.me.testproject.client;
 
 import com.google.gwt.core.client.EntryPoint;
