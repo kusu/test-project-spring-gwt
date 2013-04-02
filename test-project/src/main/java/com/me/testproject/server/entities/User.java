@@ -1,5 +1,7 @@
 package com.me.testproject.server.entities;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
@@ -12,6 +14,7 @@ public class User extends AbstractEntity<Long> {
 	 */
 	private static final long serialVersionUID = -4027557022614156142L;
 
+	@Column(unique=true)
 	private String userName;
 
 	private String password;
@@ -22,7 +25,7 @@ public class User extends AbstractEntity<Long> {
 
 	private boolean disabled;
 
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
 	private Address address;
 
 	public Address getAddress() {

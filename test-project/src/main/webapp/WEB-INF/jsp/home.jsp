@@ -4,7 +4,9 @@
 	
 	<body>
 		<a href="logout">logout</a>
-	
+		
+		<a href="changePassword">changepassword</a>
+		
 		<h2>Hello World</h2>
 	</body>
 

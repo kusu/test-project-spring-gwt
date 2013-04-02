@@ -32,6 +32,10 @@
 						successful, try again.</div>
 				</c:if>
 
+				<c:if test="${not empty msg}">
+					<div class="loginError">${msg}</div>
+				</c:if>
+
 				<div class="username">
 					<p>Username</p>
 					<p>
@@ -44,12 +48,20 @@
 						<input type='password' name='j_password'>
 					</p>
 				</div>
-				
-				<div >
+
+				<div>
 					<input class="button" name="submit" type="submit" value="Login">
+
+
 				</div>
-				<div class="clear"></div>
 			</div>
+
+			<div class="clear"></div>
+			<div style="margin-left: 50px;margin-top:10px;">
+				<a href="register" >Not registered?
+					Register Now</a>
+			</div>
+		</div>
 		</div>
 	</form:form>
 </body>
