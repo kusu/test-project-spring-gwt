@@ -52,8 +52,12 @@ public class UserApi implements IUserApi {
 	}
 
 	@Override
-	public User updateUser(User u) {
-		User user=userRepository.findOne(u.getId());
+	public User updateUser(User u) throws ClientException {
+		User user=userRepository.findByUserName(u.getUserName());
+		
+		if(user==null) {
+			throw new ClientException("User doesnot exists.");
+		}
 		
 		if (u.getAddress() != null) {
 			Address add=addressRepository.save(u.getAddress());
@@ -67,7 +71,14 @@ public class UserApi implements IUserApi {
 
 	@Override
 	public User createUser(User u) {
-		return userRepository.save(u);
+		User user=new User();
+		user.setCreated(new Date());
+		user.setAuthority(u.getAuthority());
+		user.setUserName(u.getUserName());
+		user.setPassword(passwordEncoder.encode(u.getPassword()));
+		user.setAddress(u.getAddress());
+		
+		return userRepository.save(user);
 	}
 
 	@Override

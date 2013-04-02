@@ -17,7 +17,6 @@
 				<property name="databasePlatform" value="${db.dialect}" />
 			</bean>
 		</property>
-		<property name="persistenceXmlLocation" value="${db.persistenceXml}" />
 		<property name="persistenceUnitName" value="${db.persistenceUnit}" />
 	</bean>
 

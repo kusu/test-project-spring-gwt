@@ -10,7 +10,7 @@ public interface IUserApi {
 
 	public List<User> getAllUsers();
 
-	User updateUser(User u);
+	User updateUser(User u) throws ClientException;
 	
 	User createUser(User u);
 	

@@ -2,6 +2,7 @@ package com.me.testproject.server.service.impl;
 
 import java.util.List;
 
+import com.me.testproject.exceptions.ClientException;
 import com.me.testproject.server.api.IUserApi;
 import com.me.testproject.server.entities.User;
 import com.me.testproject.server.service.IUserService;
@@ -20,7 +21,7 @@ public class UserService implements IUserService {
 	}
 
 	@Override
-	public void updateUser(User u) {
+	public void updateUser(User u) throws ClientException {
 		userApi.updateUser(u);
 	}
 
