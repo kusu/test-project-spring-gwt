@@ -9,6 +9,14 @@
 
 	<bean id="placeholderConfig"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		
+		<property name="locations">
+			<set>
+				<value>classpath:WEB-INF/db.properties</value>
+				<value>classpath:WEB-INF/testproject.properties</value>
+			</set>
+		</property>
+		
 		<property name="ignoreResourceNotFound" value="false"></property>
 	</bean>
 
