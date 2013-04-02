@@ -9,8 +9,9 @@
 	<import resource="classpath:/WEB-INF/service-context.xml" />
 	<import resource="classpath:/WEB-INF/api-context.xml" />
 	<import resource="classpath:/WEB-INF/repositories-context.xml" />
+	<import resource="classpath:/WEB-INF/controllers.xml" />
 	<import resource="classpath:/WEB-INF/startup-context.xml" />
-
+	
 	<bean id="placeholderConfig"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">

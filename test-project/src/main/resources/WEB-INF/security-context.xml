@@ -23,12 +23,12 @@
 	<http pattern="/ctbsws/*" security="none" />
 
 	<http auto-config='true'>
-		<intercept-url pattern="/main/**" access="ROLE_USER,ROLE_ADMINISTRATOR" />
+		<intercept-url pattern="/home/**" access="ROLE_USER,ROLE_ADMINISTRATOR" />
 		<intercept-url pattern="/login/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		<intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		<form-login login-page="/login"
 			authentication-failure-url="/login?errormessage=authentication.login.failed"
-			always-use-default-target="false" default-target-url="/main" />
+			always-use-default-target="false" default-target-url="/home" />
 		<logout logout-url="/logout" logout-success-url="/login" />
 
 	</http>
