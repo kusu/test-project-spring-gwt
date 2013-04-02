@@ -9,9 +9,7 @@
 	<import resource="classpath:/WEB-INF/service-context.xml" />
 	<!-- <import resource="classpath:/WEB-INF/api-context.xml" /> -->
 	<import resource="classpath:/WEB-INF/repositories-context.xml" />
-	<import resource="classpath:/WEB-INF/gwt-context.xml" />
-	<!-- <import resource="classpath:/WEB-INF/rpc-context.xml" /> -->
-
+	<import resource="classpath:/WEB-INF/startup-context.xml" />
 
 	<bean id="placeholderConfig"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
