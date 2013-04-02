@@ -3,7 +3,7 @@
 
 	
 	<body>
-		<a href="/logout">logout</a>
+		<a href="logout">logout</a>
 	
 		<h2>Hello World</h2>
 	</body>

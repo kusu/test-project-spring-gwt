@@ -15,6 +15,10 @@ public class LoginController {
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(ModelMap modelMap, @RequestParam(value = "errormessage", required = false) String errormessage,
 			@RequestParam(value = "spring-security-redirect", required = false) String redirect) {
+		if(AuthenticationUtil.getCurrentUser()!=null) {
+			return new ModelAndView("redirect:/home");
+		}
+		
 		ModelAndView loginView = new ModelAndView("login");
 
 		modelMap.put("action", "j_spring_security_check");
