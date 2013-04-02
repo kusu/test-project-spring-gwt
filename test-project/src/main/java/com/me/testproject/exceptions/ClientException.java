@@ -1,8 +1,7 @@
-package com.me.testproject.shared.exceptions;
+package com.me.testproject.exceptions;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
 
-public class ClientException extends Exception implements IsSerializable {
+public class ClientException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 	private String message;

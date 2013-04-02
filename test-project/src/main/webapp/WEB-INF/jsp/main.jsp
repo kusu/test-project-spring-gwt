@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
-<%@ taglib prefix="sprt" tagdir="/WEB-INF/tags/"%>
-<sprt:page isgwt="true">
+<html>
+	<body>
+		<h2>Hello World</h2>
+	</body>
 
-</sprt:page>
+</html>
