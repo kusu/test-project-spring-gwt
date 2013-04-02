@@ -97,11 +97,11 @@ public class UserApiTest extends AbstractTestCase {
 		Assert.assertEquals("KTM",city);
 	}
 	
-	@Test
+	@Test(expected=ClientException.class)
 	public void changePasswordSuccessTest() throws ClientException{
 		String old="xxxx";
 		String newPass="newpass";
-		userApi.createUser(u);
+		u=userApi.createUser(u);
 		u=userApi.changePassword(u.getId(), old, newPass);
 		Assert.assertEquals(passwordEncoder.encode("newpass"), u.getPassword());
 	}
