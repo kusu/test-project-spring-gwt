@@ -11,9 +11,7 @@
 		configure as beans -->
 
 	<mvc:annotation-driven />
-
-	<bean class="com.me.testproject.server.web.controller.LoginController" />
-
-	<bean class="com.me.testproject.server.web.controller.MainController" />
-
+	
+	<context:component-scan base-package="com.me.testproject.server.web.controller"></context:component-scan>
+	
 </beans>
