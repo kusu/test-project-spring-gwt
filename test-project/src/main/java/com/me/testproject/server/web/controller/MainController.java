@@ -10,10 +10,10 @@ import com.me.testproject.server.utils.AuthenticationUtil;
 @Controller
 public class MainController {
 
-	@RequestMapping(method = RequestMethod.GET, value = "/main")
+	@RequestMapping(method = RequestMethod.GET, value = "/home")
 	public String getHome(ModelMap modelMap) {
 		modelMap.put("username", AuthenticationUtil.getCurrentUser().getUserName());
-		return "main";
+		return "home";
 	}
 
 }

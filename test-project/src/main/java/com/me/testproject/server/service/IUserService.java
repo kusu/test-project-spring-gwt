@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.me.testproject.server.entities.User;
 
-public interface UserService {
+public interface IUserService {
 
 	public List<User> getAllUsers();
 

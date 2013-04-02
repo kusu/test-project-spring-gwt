@@ -17,11 +17,6 @@ public class LoginController {
 			@RequestParam(value = "spring-security-redirect", required = false) String redirect) {
 		ModelAndView loginView = new ModelAndView("login");
 
-		/*
-		 * if( StringUtils.hasText(redirect) ){ modelMap.put("action",
-		 * "/j_spring_security_check?spring-security-redirect=testt"); }else{
-		 * modelMap.put("action", "/j_spring_security_check"); }
-		 */
 		modelMap.put("action", "j_spring_security_check");
 		modelMap.put("errormessage", errormessage == null ? "" : errormessage);
 		loginView.addObject("msg", "Login is required!!");
@@ -31,7 +26,7 @@ public class LoginController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getHome() {
 		if (AuthenticationUtil.getCurrentUser() != null) {
-			return "redirect:/main";
+			return "redirect:/home";
 		}
 		return "redirect:/login";
 	}
