@@ -103,10 +103,9 @@ public class UserApiTest extends AbstractTestCase {
 		String newPass="newpass";
 		u=userApi.createUser(u);
 		u=userApi.changePassword(u.getId(), old, newPass);
-		Assert.assertEquals(passwordEncoder.encode("newpass"), u.getPassword());
+		Assert.assertTrue(passwordEncoder.matches(newPass, u.getPassword()));
 	}
 	
-	@Ignore
 	@Test(expected=ClientException.class)
 	public void invalidOldPassTest() throws ClientException{
 		u=userApi.createUser(u);
@@ -115,7 +114,6 @@ public class UserApiTest extends AbstractTestCase {
 		
 		u=userApi.changePassword(u.getId(), old, newPass);
 	}
-	@Ignore
 	@Test(expected=ClientException.class)
 	public void invalidUserPassTest() throws ClientException{
 		String old="old";
