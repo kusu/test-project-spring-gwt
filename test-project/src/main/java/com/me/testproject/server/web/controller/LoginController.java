@@ -2,8 +2,7 @@ package com.me.testproject.server.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -12,7 +11,7 @@ import com.me.testproject.server.utils.AuthenticationUtil;
 @Controller
 public class LoginController {
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@GetMapping(value = "/login")
 	public ModelAndView login(ModelMap modelMap, @RequestParam(value = "errormessage", required = false) String errormessage,
 			@RequestParam(value = "spring-security-redirect", required = false) String redirect) {
 		ModelAndView loginView = new ModelAndView("login");
@@ -28,7 +27,7 @@ public class LoginController {
 		return loginView;
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping(value = "/")
 	public String getHome() {
 		if (AuthenticationUtil.getCurrentUser() != null) {
 			return "redirect:/main";
